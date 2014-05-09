@@ -65,24 +65,24 @@ namespace ToyRobot.Core {
         }
 
         public void Move() {
-            if(!IsPlaced()) {
-                Console.WriteLine("Robot isn't placed on the table yet.");
-            } else if(!CanMove()) {
-                Console.WriteLine("Can't move in that direction.");
-            } else {
-                switch(CurrentPosture.Direction) {
-                    case Direction.NORTH:
-                        CurrentPosture.Position.Y++;
-                        break;
-                    case Direction.EAST:
-                        CurrentPosture.Position.X++;
-                        break;
-                    case Direction.SOUTH:
-                        CurrentPosture.Position.Y--;
-                        break;
-                    case Direction.WEST:
-                        CurrentPosture.Position.X--;
-                        break;
+            if(IsPlaced()) {
+                if(!CanMove()) {
+                    Console.WriteLine("Can't move in that direction.");
+                } else {
+                    switch(CurrentPosture.Direction) {
+                        case Direction.NORTH:
+                            CurrentPosture.Position.Y++;
+                            break;
+                        case Direction.EAST:
+                            CurrentPosture.Position.X++;
+                            break;
+                        case Direction.SOUTH:
+                            CurrentPosture.Position.Y--;
+                            break;
+                        case Direction.WEST:
+                            CurrentPosture.Position.X--;
+                            break;
+                    }
                 }
             }
         }

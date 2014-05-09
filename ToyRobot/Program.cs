@@ -39,9 +39,11 @@ namespace ToyRobot {
                 UserInput = Console.ReadLine();
                 if(IsValid(UserInput)) {
                     ProcessInput();
+                } else {
+                    Console.WriteLine(Constants.INVALID_INPUT);
                 }
 
-            } while(!IsValid(UserInput) || !UserInput.Equals(Constants.EXIT));
+            } while(!UserInput.Equals(Constants.EXIT));
         }
 
         private static bool IsValid(string input) {
