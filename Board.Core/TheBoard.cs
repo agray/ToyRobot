@@ -10,7 +10,7 @@ namespace Board.Core {
         }
 
         public bool IsValidPosition(int x, int y) {
-            return x < XExtent && y < YExtent;
+            return x > -1 && y > -1 && x < XExtent && y < YExtent;
         }
     }
 }

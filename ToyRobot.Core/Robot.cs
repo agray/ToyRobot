@@ -39,8 +39,10 @@ namespace ToyRobot.Core {
         }
 
         public void Move() {
-            if(!CanMove()) {
-                Console.WriteLine("Can't move in that direction");
+            if(!IsPlaced()) {
+                Console.WriteLine("Robot isn't placed yet.");
+            } else if(!CanMove()) {
+                Console.WriteLine("Can't move in that direction.");
             } else {
                 switch(CurrentPosture.Direction) {
                     case Direction.NORTH:
