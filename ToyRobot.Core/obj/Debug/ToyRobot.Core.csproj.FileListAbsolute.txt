@@ -1,0 +1,7 @@
+C:\Temp\ToyRobot\ToyRobot.Core\bin\Debug\ToyRobot.Core.dll
+C:\Temp\ToyRobot\ToyRobot.Core\bin\Debug\ToyRobot.Core.pdb
+C:\Temp\ToyRobot\ToyRobot.Core\bin\Debug\Board.Core.dll
+C:\Temp\ToyRobot\ToyRobot.Core\bin\Debug\Board.Core.pdb
+C:\Temp\ToyRobot\ToyRobot.Core\obj\Debug\ToyRobot.Core.csprojResolveAssemblyReference.cache
+C:\Temp\ToyRobot\ToyRobot.Core\obj\Debug\ToyRobot.Core.dll
+C:\Temp\ToyRobot\ToyRobot.Core\obj\Debug\ToyRobot.Core.pdb
