@@ -106,7 +106,7 @@ namespace ToyRobot.Core {
         }
 
         public String ReportPosture() {
-            if(!IsPlaced()) {
+            if(IsPlaced()) {
                 return String.Format("Output: {0},{1},{2}",
                                      CurrentPosture.Position.X,
                                      CurrentPosture.Position.Y,

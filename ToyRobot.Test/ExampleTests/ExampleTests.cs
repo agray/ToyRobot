@@ -7,7 +7,7 @@ namespace ToyRobot.Test.ExampleTests {
     public class ExampleTests : TestBase {
         [Test]
         public void ExampleTestA() {
-            string report = String.Empty;
+            String report = String.Empty;
             badRobot.Place(0, 0, Direction.NORTH);
             badRobot.Move();
             report = badRobot.ReportPosture();
@@ -16,7 +16,7 @@ namespace ToyRobot.Test.ExampleTests {
 
         [Test]
         public void ExampleTestB() {
-            string report = String.Empty;
+            String report = String.Empty;
             badRobot.Place(0, 0, Direction.NORTH);
             badRobot.Turn(TurnTo.LEFT);
             report = badRobot.ReportPosture();
@@ -25,7 +25,7 @@ namespace ToyRobot.Test.ExampleTests {
 
         [Test]
         public void ExampleTestC() {
-            string report = String.Empty;
+            String report = String.Empty;
             badRobot.Place(1, 2, Direction.EAST);
             badRobot.Move();
             badRobot.Move();
