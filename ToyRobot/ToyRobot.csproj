@@ -53,6 +53,10 @@
       <Project>{7e8aee02-7b87-4144-a4d4-6bbb2a203c62}</Project>
       <Name>Board.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ToyRobot.Core\ToyRobot.Core.csproj">
+      <Project>{2dfa2a19-f85c-44f6-9652-563d9fb5fc35}</Project>
+      <Name>ToyRobot.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -38,12 +38,10 @@ namespace ToyRobot.Test {
         [TestCase(0, 1)]
         [TestCase(0, 2)]
         [TestCase(0, 3)]
-        [TestCase(0, 4)]
         [TestCase(1, 0)]
         [TestCase(1, 1)]
         [TestCase(1, 2)]
         [TestCase(1, 3)]
-        [TestCase(1, 4)]
         [TestCase(2, 0)]
         [TestCase(2, 1)]
         [TestCase(2, 2)]
@@ -53,7 +51,6 @@ namespace ToyRobot.Test {
         [TestCase(3, 1)]
         [TestCase(3, 2)]
         [TestCase(3, 3)]
-        [TestCase(3, 4)]
         public void ValidMoveEastTest(int x, int y) {
             badRobot.Place(x, y, Direction.EAST);
             badRobot.Move();

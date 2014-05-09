@@ -101,6 +101,13 @@ namespace ToyRobot.Core {
             }
         }
 
+        public void Report() {
+            Console.WriteLine(String.Format("Output: {0}, {1}, {2}",
+                                            CurrentPosture.Position.X,
+                                            CurrentPosture.Position.Y,
+                                            CurrentPosture.Direction));
+        }
+
         //public int AddTwoNumbers(int a, int b) {
         //    return a + b;
         //}
