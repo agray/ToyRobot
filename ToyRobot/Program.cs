@@ -41,23 +41,23 @@ namespace ToyRobot {
                     ProcessInput();
                 }
 
-            } while(!IsValid(UserInput) || !UserInput.Equals("EXIT"));
+            } while(!IsValid(UserInput) || !UserInput.Equals(Constants.EXIT));
         }
 
         private static bool IsValid(string input) {
-            if(input.Equals("REPORT") ||
-               input.Equals("MOVE") ||
-               input.Equals("LEFT") ||
-               input.Equals("RIGHT") ||
-               input.Equals("HELP") ||
-               input.Equals("EXIT")) {
+            if(input.Equals(Constants.REPORT) ||
+               input.Equals(Constants.MOVE) ||
+               input.Equals(Constants.LEFT) ||
+               input.Equals(Constants.RIGHT) ||
+               input.Equals(Constants.HELP) ||
+               input.Equals(Constants.EXIT)) {
                 return true;
-            } else if(input.StartsWith("PLACE")) {
-                string[] parts = input.Split(' ');
+            } else if(input.StartsWith(Constants.PLACE)) {
+                string[] parts = input.Split(Constants.SPACE_CHAR);
                 if(parts.Length != 2) { 
                     return false; 
                 }
-                string[] options = parts[1].Split(',');
+                string[] options = parts[1].Split(Constants.COMMA_CHAR);
                 if(options.Length != 3) {
                     return false;
                 }
@@ -67,59 +67,59 @@ namespace ToyRobot {
                 } catch(Exception) {
                     return false;
                 }
-                return options[2].Equals("N") ||
-                       options[2].Equals("E") ||
-                       options[2].Equals("S") ||
-                       options[2].Equals("W");
+                return options[2].Equals(Constants.NORTH) ||
+                       options[2].Equals(Constants.EAST) ||
+                       options[2].Equals(Constants.SOUTH) ||
+                       options[2].Equals(Constants.WEST);
             } else {
                 return false;
             }
         }
 
         private static void PrintTitle() {
-            Console.WriteLine("WELCOME TO TOY ROBOT!");
+            Console.WriteLine(Constants.TAG_LINE);
             Console.WriteLine();
-            Console.WriteLine("Execute commands or type HELP for more information.");
+            Console.WriteLine(Constants.INITIAL_INSTRUCTION);
             Console.WriteLine();
         }
 
         private static void PrintHelp() {
             Console.WriteLine();
-            Console.WriteLine("PLACE X,Y,F: Place robot on table with position X,Y and direction F.");
-            Console.WriteLine("MOVE: Move the robot forward one grid place in direction currently facing.");
-            Console.WriteLine("LEFT: Turn robot 90 degrees left.");
-            Console.WriteLine("RIGHT: Turn robot 90 degrees right.");
-            Console.WriteLine("REPORT: Report current position and direction faced.");
-            Console.WriteLine("HELP: Print this help.");
-            Console.WriteLine("EXIT: Exit this application.");
+            Console.WriteLine(Constants.PLACE_HELP);
+            Console.WriteLine(Constants.MOVE_HELP);
+            Console.WriteLine(Constants.LEFT_HELP);
+            Console.WriteLine(Constants.RIGHT_HELP);
+            Console.WriteLine(Constants.REPORT_HELP);
+            Console.WriteLine(Constants.HELP_HELP);
+            Console.WriteLine(Constants.EXIT_HELP);
             Console.WriteLine();
         }
 
         private static void ProcessInput() {
-            string[] command = UserInput.Split(' ');
+            string[] command = UserInput.Split(Constants.SPACE_CHAR);
             switch(command[0]) {
-                case "HELP":
+                case Constants.HELP:
                     PrintHelp();
                     break;
-                case "MOVE":
+                case Constants.MOVE:
                     Robot.Move();
                     break;
-                case "PLACE":
+                case Constants.PLACE:
                     Direction direction;
-                    string[] options = command[1].Split(',');
+                    string[] options = command[1].Split(Constants.COMMA_CHAR);
                     int x = int.Parse(options[0]);
                     int y = int.Parse(options[1]);    
                     switch(options[2]) {
-                        case "N":
+                        case Constants.NORTH:
                             direction = Direction.NORTH;
                             break;
-                        case "E":
+                        case Constants.EAST:
                             direction = Direction.EAST;
                             break;
-                        case "S":
+                        case Constants.SOUTH:
                             direction = Direction.SOUTH;
                             break;
-                        case "W":
+                        case Constants.WEST:
                             direction = Direction.WEST;
                             break;
                         default:
@@ -128,13 +128,13 @@ namespace ToyRobot {
                     }
                     Robot.Place(x, y, direction);
                     break;
-                case "LEFT":
+                case Constants.LEFT:
                     Robot.Turn(TurnTo.LEFT);
                     break;
-                case "RIGHT":
+                case Constants.RIGHT:
                     Robot.Turn(TurnTo.RIGHT);
                     break;
-                case "REPORT":
+                case Constants.REPORT:
                     Console.WriteLine(Robot.ReportPosture());
                     break;
             }
