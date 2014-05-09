@@ -5,8 +5,6 @@ using ToyRobot.Core;
 namespace ToyRobot {
     class Program {
         static void Main(string[] args) {
-            TheTable table = new TheTable();
-
             Robot robot = new Robot();
             robot.Place(0, 0, Direction.NORTH);
             robot.Move();
