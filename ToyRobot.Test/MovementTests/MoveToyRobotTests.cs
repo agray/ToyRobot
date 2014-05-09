@@ -119,5 +119,49 @@ namespace ToyRobot.Test.MovementTests {
             Assert.AreEqual(x - 1, badRobot.CurrentPosture.Position.X);
             Assert.AreEqual(Direction.WEST, badRobot.CurrentPosture.Direction);
         }
+
+        [Test]
+        [TestCase(0, 4)]
+        [TestCase(1, 4)]
+        [TestCase(2, 4)]
+        [TestCase(3, 4)]
+        [TestCase(4, 4)]
+        public void InvalidMoveNorthTest(int x, int y) {
+            badRobot.Place(x, y, Direction.NORTH);
+            badRobot.Move();
+        }
+
+        [Test]
+        [TestCase(4, 0)]
+        [TestCase(4, 1)]
+        [TestCase(4, 2)]
+        [TestCase(4, 3)]
+        [TestCase(4, 4)]
+        public void InvalidMoveEastTest(int x, int y) {
+            badRobot.Place(x, y, Direction.EAST);
+            badRobot.Move();
+        }
+
+        [Test]
+        [TestCase(0, 0)]
+        [TestCase(1, 0)]
+        [TestCase(2, 0)]
+        [TestCase(3, 0)]
+        [TestCase(4, 0)]
+        public void InvalidMoveSouthTest(int x, int y) {
+            badRobot.Place(x, y, Direction.SOUTH);
+            badRobot.Move();
+        }
+
+        [Test]
+        [TestCase(0, 0)]
+        [TestCase(0, 1)]
+        [TestCase(0, 2)]
+        [TestCase(0, 3)]
+        [TestCase(0, 4)]
+        public void InvalidMoveWestTest(int x, int y) {
+            badRobot.Place(x, y, Direction.WEST);
+            badRobot.Move();
+        }
     }
 }

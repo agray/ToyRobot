@@ -40,7 +40,7 @@ namespace ToyRobot.Core {
 
         public void Move() {
             if(!IsPlaced()) {
-                Console.WriteLine("Robot isn't placed yet.");
+                Console.WriteLine("Robot isn't placed on the board yet.");
             } else if(!CanMove()) {
                 Console.WriteLine("Can't move in that direction.");
             } else {
@@ -62,10 +62,12 @@ namespace ToyRobot.Core {
         }
 
         public void Turn(TurnTo turnTo) {
-            if(turnTo.Equals(TurnTo.LEFT)) {
-                TurnLeft();
-            } else {
-                TurnRight();
+            if(IsPlaced()) {
+                if(turnTo.Equals(TurnTo.LEFT)) {
+                    TurnLeft();
+                } else {
+                    TurnRight();
+                }
             }
         }
 
@@ -104,10 +106,12 @@ namespace ToyRobot.Core {
         }
 
         public void Report() {
-            Console.WriteLine(String.Format("Output: {0}, {1}, {2}",
-                                            CurrentPosture.Position.X,
-                                            CurrentPosture.Position.Y,
-                                            CurrentPosture.Direction));
+            if(!IsPlaced()) {
+                Console.WriteLine(String.Format("Output: {0},{1},{2}",
+                                                CurrentPosture.Position.X,
+                                                CurrentPosture.Position.Y,
+                                                CurrentPosture.Direction));
+            }
         }
 
         //public int AddTwoNumbers(int a, int b) {
