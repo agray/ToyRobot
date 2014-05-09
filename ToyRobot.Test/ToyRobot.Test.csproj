@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Base\TestBase.cs" />
     <Compile Include="ExampleTests\ExampleTests.cs" />
+    <Compile Include="CommandTests\CommandTests.cs" />
     <Compile Include="MovementTests\MoveToyRobotTests.cs" />
     <Compile Include="PlacementTests\PlaceToyRobotTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
