@@ -1,10 +1,10 @@
-﻿using Board.Core;
+﻿using Table.Core;
 using ToyRobot.Core;
 
 namespace ToyRobot {
     class Program {
         static void Main(string[] args) {
-            TheBoard board = new TheBoard();
+            TheTable table = new TheTable();
 
             Robot robot = new Robot();
             robot.Place(0, 0, Direction.NORTH);

@@ -1,4 +1,4 @@
-﻿using Board.Core;
+﻿using Table.Core;
 using System;
 
 namespace ToyRobot.Core {
@@ -14,15 +14,15 @@ namespace ToyRobot.Core {
         }
 
         public void Place(int x, int y, Direction direction) {
-            TheBoard board = new TheBoard();
-            if(board.IsValidPosition(x, y)) {
+            TheTable table = new TheTable();
+            if(table.IsValidPosition(x, y)) {
                 Position position = new Position(x, y);
                 CurrentPosture = new Posture(position, direction);
             }
         }
 
         private bool CanMove() {
-            TheBoard board = new TheBoard();
+            TheTable board = new TheTable();
             switch(CurrentPosture.Direction) {
                 case Direction.NORTH:
                     return CurrentPosture.Position.Y < board.YExtent - 1;

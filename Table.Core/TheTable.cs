@@ -1,10 +1,10 @@
 ﻿
-namespace Board.Core {
-    public class TheBoard {
+namespace Table.Core {
+    public class TheTable {
         public int XExtent { get; private set; }
         public int YExtent { get; private set; }
 
-        public TheBoard() {
+        public TheTable() {
             XExtent = 5;
             YExtent = 5;
         }

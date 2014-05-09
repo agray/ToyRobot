@@ -49,9 +49,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Board.Core\Board.Core.csproj">
+    <ProjectReference Include="..\Table.Core\Table.Core.csproj">
       <Project>{7e8aee02-7b87-4144-a4d4-6bbb2a203c62}</Project>
-      <Name>Board.Core</Name>
+      <Name>Table.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\ToyRobot.Core\ToyRobot.Core.csproj">
       <Project>{2dfa2a19-f85c-44f6-9652-563d9fb5fc35}</Project>

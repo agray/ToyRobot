@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyRobot.Test", "ToyRobot.T
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1513FBA8-9C38-472F-8568-AB52CA80CEE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Board.Core", "Board.Core\Board.Core.csproj", "{7E8AEE02-7B87-4144-A4D4-6BBB2A203C62}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Table.Core", "Table.Core\Table.Core.csproj", "{7E8AEE02-7B87-4144-A4D4-6BBB2A203C62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

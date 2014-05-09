@@ -47,9 +47,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Board.Core\Board.Core.csproj">
+    <ProjectReference Include="..\Table.Core\Table.Core.csproj">
       <Project>{7e8aee02-7b87-4144-a4d4-6bbb2a203c62}</Project>
-      <Name>Board.Core</Name>
+      <Name>Table.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
