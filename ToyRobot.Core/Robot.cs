@@ -40,7 +40,7 @@ namespace ToyRobot.Core {
 
         public void Move() {
             if(!IsPlaced()) {
-                Console.WriteLine("Robot isn't placed on the board yet.");
+                Console.WriteLine("Robot isn't placed on the table yet.");
             } else if(!CanMove()) {
                 Console.WriteLine("Can't move in that direction.");
             } else {

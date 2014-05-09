@@ -11,7 +11,6 @@ namespace ToyRobot {
             PrintTitle();
             do {
                 UserInput = Console.ReadLine();
-                //UserInput = DisplayMenu();
                 if(IsValid(UserInput)) {
                     ProcessInput();
                 }
@@ -29,6 +28,9 @@ namespace ToyRobot {
                 return true;
             } else if(input.StartsWith("PLACE")) {
                 string[] parts = input.Split(' ');
+                if(parts.Length != 2) { 
+                    return false; 
+                }
                 string[] options = parts[1].Split(',');
                 if(options.Length != 3) {
                     return false;
@@ -57,8 +59,8 @@ namespace ToyRobot {
 
         private static void PrintHelp() {
             Console.WriteLine();
-            Console.WriteLine("PLACE X,Y,F: Place robot on table at grid X,Y facing in direction F, where F is one of N, S, E or W.");
-            Console.WriteLine("MOVE: Attempt to move the robot forward one grid place in direction currently facing.");
+            Console.WriteLine("PLACE X,Y,F: Place robot on table with position X,Y and direction F.");
+            Console.WriteLine("MOVE: Move the robot forward one grid place in direction currently facing.");
             Console.WriteLine("LEFT: Turn robot 90 degrees left.");
             Console.WriteLine("RIGHT: Turn robot 90 degrees right.");
             Console.WriteLine("REPORT: Report current position and direction faced.");
