@@ -1,8 +1,0 @@
-C:\Temp\ToyRobot\ToyRobot\bin\Debug\ToyRobot.exe.config
-C:\Temp\ToyRobot\ToyRobot\bin\Debug\ToyRobot.exe
-C:\Temp\ToyRobot\ToyRobot\bin\Debug\ToyRobot.pdb
-C:\Temp\ToyRobot\ToyRobot\bin\Debug\Board.Core.dll
-C:\Temp\ToyRobot\ToyRobot\bin\Debug\Board.Core.pdb
-C:\Temp\ToyRobot\ToyRobot\obj\Debug\ToyRobot.csprojResolveAssemblyReference.cache
-C:\Temp\ToyRobot\ToyRobot\obj\Debug\ToyRobot.exe
-C:\Temp\ToyRobot\ToyRobot\obj\Debug\ToyRobot.pdb

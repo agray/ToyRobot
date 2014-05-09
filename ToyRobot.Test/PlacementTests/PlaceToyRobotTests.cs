@@ -129,7 +129,7 @@ namespace ToyRobot.Test.PlacementTests {
         [TestCase(0, 5, Direction.EAST)]
         [TestCase(0, 5, Direction.SOUTH)]
         [TestCase(0, 5, Direction.WEST)]
-        public void ValidPlacementTest(int x, int y, Direction direction) {
+        public void InvalidPlacementTest(int x, int y, Direction direction) {
             badRobot.Place(x, y, direction);
             Assert.AreEqual(null, badRobot.CurrentPosture);
         }
