@@ -30,7 +30,7 @@ namespace ToyRobot.Test {
             badRobot.Move();
             Assert.AreEqual(y + 1, badRobot.CurrentPosture.Position.Y);
             Assert.AreEqual(x, badRobot.CurrentPosture.Position.X);
-            Assert.AreEqual(Direction.WEST, badRobot.CurrentPosture.Direction);
+            Assert.AreEqual(Direction.NORTH, badRobot.CurrentPosture.Direction);
         }
 
         [Test]
@@ -59,7 +59,7 @@ namespace ToyRobot.Test {
             badRobot.Move();
             Assert.AreEqual(y, badRobot.CurrentPosture.Position.Y);
             Assert.AreEqual(x + 1, badRobot.CurrentPosture.Position.X);
-            Assert.AreEqual(Direction.WEST, badRobot.CurrentPosture.Direction);
+            Assert.AreEqual(Direction.EAST, badRobot.CurrentPosture.Direction);
         }
 
         [Test]
@@ -88,7 +88,7 @@ namespace ToyRobot.Test {
             badRobot.Move();
             Assert.AreEqual(y - 1, badRobot.CurrentPosture.Position.Y);
             Assert.AreEqual(x, badRobot.CurrentPosture.Position.X);
-            Assert.AreEqual(Direction.WEST, badRobot.CurrentPosture.Direction);
+            Assert.AreEqual(Direction.SOUTH, badRobot.CurrentPosture.Direction);
         }
 
         [Test]
