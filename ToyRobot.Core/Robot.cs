@@ -44,10 +44,10 @@ namespace ToyRobot.Core {
             } else {
                 switch(CurrentPosture.Direction) {
                     case Direction.NORTH:
-                        CurrentPosture.Position.X++;
+                        CurrentPosture.Position.Y++;
                         break;
                     case Direction.EAST:
-                        CurrentPosture.Position.Y++;
+                        CurrentPosture.Position.X++;
                         break;
                     case Direction.SOUTH:
                         CurrentPosture.Position.Y--;

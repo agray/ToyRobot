@@ -28,8 +28,8 @@ namespace ToyRobot.Test {
         public void ValidMoveNorthTest(int x, int y) {
             badRobot.Place(x, y, Direction.NORTH);
             badRobot.Move();
-            Assert.AreEqual(y, badRobot.CurrentPosture.Position.Y);
-            Assert.AreEqual(x + 1, badRobot.CurrentPosture.Position.X);
+            Assert.AreEqual(y + 1, badRobot.CurrentPosture.Position.Y);
+            Assert.AreEqual(x, badRobot.CurrentPosture.Position.X);
             Assert.AreEqual(Direction.WEST, badRobot.CurrentPosture.Direction);
         }
 
@@ -57,8 +57,8 @@ namespace ToyRobot.Test {
         public void ValidMoveEastTest(int x, int y) {
             badRobot.Place(x, y, Direction.EAST);
             badRobot.Move();
-            Assert.AreEqual(y + 1, badRobot.CurrentPosture.Position.Y);
-            Assert.AreEqual(x, badRobot.CurrentPosture.Position.X);
+            Assert.AreEqual(y, badRobot.CurrentPosture.Position.Y);
+            Assert.AreEqual(x + 1, badRobot.CurrentPosture.Position.X);
             Assert.AreEqual(Direction.WEST, badRobot.CurrentPosture.Direction);
         }
 
