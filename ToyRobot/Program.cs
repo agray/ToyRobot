@@ -1,4 +1,5 @@
-﻿using Table.Core;
+﻿using System;
+using Table.Core;
 using ToyRobot.Core;
 
 namespace ToyRobot {
@@ -9,18 +10,18 @@ namespace ToyRobot {
             Robot robot = new Robot();
             robot.Place(0, 0, Direction.NORTH);
             robot.Move();
-            robot.Report();
+            Console.WriteLine(robot.ReportPosture());
 
             robot.Place(0, 0, Direction.NORTH);
             robot.Turn(TurnTo.LEFT);
-            robot.Report();
+            Console.WriteLine(robot.ReportPosture());
 
             robot.Place(1, 2, Direction.EAST);
             robot.Move();
             robot.Move();
             robot.Turn(TurnTo.LEFT);
             robot.Move();
-            robot.Report();
+            Console.WriteLine(robot.ReportPosture());
         }
     }
 }
