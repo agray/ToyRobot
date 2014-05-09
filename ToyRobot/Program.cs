@@ -7,7 +7,7 @@ namespace ToyRobot {
             TheBoard board = new TheBoard();
 
             Robot robot = new Robot();
-            robot.Place(-1, 0, Direction.EAST);
+            robot.Place(0, 4, Direction.EAST);
             robot.Move();
             robot.Report();
 

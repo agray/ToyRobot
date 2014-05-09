@@ -25,9 +25,9 @@ namespace ToyRobot.Core {
             TheBoard board = new TheBoard();
             switch(CurrentPosture.Direction) {
                 case Direction.NORTH:
-                    return CurrentPosture.Position.X < board.XExtent - 1;
-                case Direction.EAST:
                     return CurrentPosture.Position.Y < board.YExtent - 1;
+                case Direction.EAST:
+                    return CurrentPosture.Position.X < board.XExtent - 1;
                 case Direction.SOUTH:
                     return CurrentPosture.Position.Y > 0;
                 case Direction.WEST:
