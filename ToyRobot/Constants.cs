@@ -28,30 +28,30 @@ using System;
 
 namespace ToyRobot {
     public class Constants {
-        public static const String TAG_LINE = "WELCOME TO TOY ROBOT!";
-        public static const String INITIAL_INSTRUCTION = "Execute commands or type HELP for more information.";
-        public static const String PLACE_HELP = "PLACE X,Y,F: Place robot on table with position X,Y and direction F.";
-        public static const String MOVE_HELP = "MOVE: Move the robot forward one grid place in direction currently facing.";
-        public static const String RIGHT_HELP = "RIGHT: Turn robot 90 degrees right.";
-        public static const String LEFT_HELP = "LEFT: Turn robot 90 degrees left.";
-        public static const String REPORT_HELP = "REPORT: Report current position and direction faced.";
-        public static const String HELP_HELP = "HELP: Print this help.";
-        public static const String EXIT_HELP = "EXIT: Exit this application.";
+        public const String TAG_LINE = "WELCOME TO TOY ROBOT!";
+        public const String INITIAL_INSTRUCTION = "Execute commands or type HELP for more information.";
+        public const String PLACE_HELP = "PLACE X,Y,F: Place robot on table with position X,Y and direction F.";
+        public const String MOVE_HELP = "MOVE: Move the robot forward one grid place in direction currently facing.";
+        public const String RIGHT_HELP = "RIGHT: Turn robot 90 degrees right.";
+        public const String LEFT_HELP = "LEFT: Turn robot 90 degrees left.";
+        public const String REPORT_HELP = "REPORT: Report current position and direction faced.";
+        public const String HELP_HELP = "HELP: Print this help.";
+        public const String EXIT_HELP = "EXIT: Exit this application.";
 
-        public static const String NORTH = "N";
-        public static const String SOUTH = "S";
-        public static const String EAST = "E";
-        public static const String WEST = "W";
+        public const String NORTH = "N";
+        public const String SOUTH = "S";
+        public const String EAST = "E";
+        public const String WEST = "W";
 
-        public static const String REPORT = "REPORT";
-        public static const String MOVE = "MOVE";
-        public static const String EXIT = "EXIT";
-        public static const String HELP = "HELP";
-        public static const String LEFT = "LEFT";
-        public static const String RIGHT = "RIGHT";
-        public static const String PLACE = "PLACE";
+        public const String REPORT = "REPORT";
+        public const String MOVE = "MOVE";
+        public const String EXIT = "EXIT";
+        public const String HELP = "HELP";
+        public const String LEFT = "LEFT";
+        public const String RIGHT = "RIGHT";
+        public const String PLACE = "PLACE";
 
-        public static const char COMMA_CHAR = ',';
-        public static const char SPACE_CHAR = ' ';
+        public const char COMMA_CHAR = ',';
+        public const char SPACE_CHAR = ' ';
     }
 }
