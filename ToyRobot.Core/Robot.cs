@@ -29,7 +29,6 @@ using Table.Core;
 
 namespace ToyRobot.Core {
     public class Robot {
-        //public Posture CurrentPosture { get; private set; }
         private Posture CurrentPosture;
 
         public Robot() {
