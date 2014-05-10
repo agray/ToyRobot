@@ -29,7 +29,7 @@ using ToyRobot.Core;
 using ToyRobot.Test.Base;
 
 namespace ToyRobot.Test.PlacementTests {
-    public class PlaceToyRobotTests : TestBase {
+    public class ToyRobotPlacementTests : TestBase {
         [Test]
         [TestCase(0, 0, Direction.NORTH)]
         [TestCase(0, 0, Direction.EAST)]

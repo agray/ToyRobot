@@ -29,7 +29,7 @@ using ToyRobot.Core;
 using ToyRobot.Test.Base;
 
 namespace ToyRobot.Test.MovementTests {
-    public class MoveToyRobotTests : TestBase {
+    public class ToyRobotMovementTests : TestBase {
         [Test]
         [TestCase(0, 0)]
         [TestCase(1, 0)]

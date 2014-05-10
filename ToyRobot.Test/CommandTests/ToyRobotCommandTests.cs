@@ -29,36 +29,30 @@ using System;
 using ToyRobot.Core;
 using ToyRobot.Test.Base;
 
-namespace ToyRobot.Test.ExampleTests {
-    public class ExampleTests : TestBase {
+namespace ToyRobot.Test.CommandTests {
+    public class ToyRobotCommandTests : TestBase {
         [Test]
-        public void ExampleTestA() {
-            String report = String.Empty;
-            BadRobot.Place(0, 0, Direction.NORTH);
+        public void IgnoreMoveWhenUnplaced() {
             BadRobot.Move();
-            report = BadRobot.ReportPosture();
-            Assert.AreEqual("Output: 0,1,NORTH", report);
+            Assert.IsFalse(BadRobot.IsPlaced());
         }
 
         [Test]
-        public void ExampleTestB() {
-            String report = String.Empty;
-            BadRobot.Place(0, 0, Direction.NORTH);
+        public void IgnoreTurnLeftWhenUnplaced() {
             BadRobot.Turn(TurnTo.LEFT);
-            report = BadRobot.ReportPosture();
-            Assert.AreEqual("Output: 0,0,WEST", report);
+            Assert.IsFalse(BadRobot.IsPlaced());
         }
 
         [Test]
-        public void ExampleTestC() {
-            String report = String.Empty;
-            BadRobot.Place(1, 2, Direction.EAST);
-            BadRobot.Move();
-            BadRobot.Move();
-            BadRobot.Turn(TurnTo.LEFT);
-            BadRobot.Move();
-            report = BadRobot.ReportPosture();
-            Assert.AreEqual("Output: 3,3,NORTH", report);
+        public void IgnoreTurnRightWhenUnplaced() {
+            BadRobot.Turn(TurnTo.RIGHT);
+            Assert.IsFalse(BadRobot.IsPlaced());
+        }
+
+        [Test]
+        public void IgnoreReportWhenUnplaced() {
+            String report = BadRobot.ReportPosture();
+            Assert.AreEqual(String.Empty, report);
         }
     }
 }
