@@ -43,10 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\TestBase.cs" />
-    <Compile Include="ExampleTests\ExampleTests.cs" />
-    <Compile Include="CommandTests\CommandTests.cs" />
-    <Compile Include="MovementTests\MoveToyRobotTests.cs" />
-    <Compile Include="PlacementTests\PlaceToyRobotTests.cs" />
+    <Compile Include="ExampleTests\ToyRobotExampleTests.cs" />
+    <Compile Include="CommandTests\ToyRobotCommandTests.cs" />
+    <Compile Include="MovementTests\ToyRobotMovementTests.cs" />
+    <Compile Include="PlacementTests\ToyRobotPlacementTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
