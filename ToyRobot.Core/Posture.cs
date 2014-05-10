@@ -37,7 +37,6 @@ namespace ToyRobot.Core {
         }
 
         public bool CanMove() {
-            TheTable table = new TheTable();
             switch(Direction) {
                 case Direction.NORTH:
                     return Position.CanMoveNorth();

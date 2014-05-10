@@ -26,11 +26,27 @@
 
 namespace Table.Core {
     public class TheTable {
-        public static int XExtent = 5;
-        public static int YExtent = 5;
+        private static int XExtent = 5;
+        private static int YExtent = 5;
 
         public static bool IsValidPosition(int x, int y) {
             return x > -1 && y > -1 && x < XExtent && y < YExtent;
+        }
+
+        public static bool IsNorthAvailable(int y) {
+            return y < YExtent - 1;
+        }
+
+        public static bool IsEastAvailable(int x) {
+            return x < XExtent - 1;
+        }
+
+        public static bool IsSouthAvailable(int y) {
+            return y > 0;
+        }
+
+        public static bool IsWestAvailable(int x) {
+            return x > 0;
         }
     }
 }

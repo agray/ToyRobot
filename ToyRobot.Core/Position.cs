@@ -37,19 +37,19 @@ namespace ToyRobot.Core {
         }
 
         public bool CanMoveNorth() {
-            return Y < TheTable.YExtent - 1;
+            return TheTable.IsNorthAvailable(Y);
         }
 
         public bool CanMoveEast() {
-            return X < TheTable.XExtent - 1;
+            return TheTable.IsEastAvailable(X);
         }
 
         public bool CanMoveSouth() {
-            return Y > 0;
+            return TheTable.IsSouthAvailable(Y);
         }
 
         public bool CanMoveWest() {
-            return X > 0;
+            return TheTable.IsWestAvailable(X);
         }
 
         public void MoveNorth() {
@@ -68,7 +68,7 @@ namespace ToyRobot.Core {
             X--;
         }
 
-        public String ToString() {
+        public override String ToString() {
             return String.Format("{0},{1}", X, Y);
         }
 
