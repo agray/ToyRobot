@@ -26,15 +26,10 @@
 
 namespace Table.Core {
     public class TheTable {
-        public int XExtent { get; private set; }
-        public int YExtent { get; private set; }
+        public static int XExtent = 5;
+        public static int YExtent = 5;
 
-        public TheTable() {
-            XExtent = 5;
-            YExtent = 5;
-        }
-
-        public bool IsValidPosition(int x, int y) {
+        public static bool IsValidPosition(int x, int y) {
             return x > -1 && y > -1 && x < XExtent && y < YExtent;
         }
     }

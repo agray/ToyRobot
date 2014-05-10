@@ -34,30 +34,30 @@ namespace ToyRobot.Test.ExampleTests {
         [Test]
         public void ExampleTestA() {
             String report = String.Empty;
-            badRobot.Place(0, 0, Direction.NORTH);
-            badRobot.Move();
-            report = badRobot.ReportPosture();
+            BadRobot.Place(0, 0, Direction.NORTH);
+            BadRobot.Move();
+            report = BadRobot.ReportPosture();
             Assert.AreEqual("Output: 0,1,NORTH", report);
         }
 
         [Test]
         public void ExampleTestB() {
             String report = String.Empty;
-            badRobot.Place(0, 0, Direction.NORTH);
-            badRobot.Turn(TurnTo.LEFT);
-            report = badRobot.ReportPosture();
+            BadRobot.Place(0, 0, Direction.NORTH);
+            BadRobot.Turn(TurnTo.LEFT);
+            report = BadRobot.ReportPosture();
             Assert.AreEqual("Output: 0,0,WEST", report);
         }
 
         [Test]
         public void ExampleTestC() {
             String report = String.Empty;
-            badRobot.Place(1, 2, Direction.EAST);
-            badRobot.Move();
-            badRobot.Move();
-            badRobot.Turn(TurnTo.LEFT);
-            badRobot.Move();
-            report = badRobot.ReportPosture();
+            BadRobot.Place(1, 2, Direction.EAST);
+            BadRobot.Move();
+            BadRobot.Move();
+            BadRobot.Turn(TurnTo.LEFT);
+            BadRobot.Move();
+            report = BadRobot.ReportPosture();
             Assert.AreEqual("Output: 3,3,NORTH", report);
         }
     }

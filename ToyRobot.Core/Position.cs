@@ -24,14 +24,56 @@
  */
 #endregion
 
+using System;
+using Table.Core;
 namespace ToyRobot.Core {
     public class Position {
-        public int X { get; set; }
-        public int Y { get; set; }
+        private int X;
+        private int Y;
 
         public Position(int x, int y) {
             X = x;
             Y = y;
+        }
+
+        public bool CanMoveNorth() {
+            return Y < TheTable.YExtent - 1;
+        }
+
+        public bool CanMoveEast() {
+            return X < TheTable.XExtent - 1;
+        }
+
+        public bool CanMoveSouth() {
+            return Y > 0;
+        }
+
+        public bool CanMoveWest() {
+            return X > 0;
+        }
+
+        public void MoveNorth() {
+            Y++;
+        }
+
+        public void MoveEast() {
+            X++;
+        }
+
+        public void MoveSouth() {
+            Y--;
+        }
+
+        public void MoveWest() {
+            X--;
+        }
+
+        public String ToString() {
+            return String.Format("{0},{1}", X, Y);
+        }
+
+        public bool Equals(Position other) {
+            return X == other.X && Y == other.Y;
         }
     }
 }

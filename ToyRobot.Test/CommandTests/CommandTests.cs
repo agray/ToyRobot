@@ -33,25 +33,25 @@ namespace ToyRobot.Test.CommandTests {
     public class CommandTests : TestBase {
         [Test]
         public void IgnoreMoveWhenUnplaced() {
-            badRobot.Move();
-            Assert.AreEqual(null, badRobot.CurrentPosture);
+            BadRobot.Move();
+            Assert.IsFalse(BadRobot.IsPlaced());
         }
 
         [Test]
         public void IgnoreTurnLeftWhenUnplaced() {
-            badRobot.Turn(TurnTo.LEFT);
-            Assert.AreEqual(null, badRobot.CurrentPosture);
+            BadRobot.Turn(TurnTo.LEFT);
+            Assert.IsFalse(BadRobot.IsPlaced());
         }
 
         [Test]
         public void IgnoreTurnRightWhenUnplaced() {
-            badRobot.Turn(TurnTo.RIGHT);
-            Assert.AreEqual(null, badRobot.CurrentPosture);
+            BadRobot.Turn(TurnTo.RIGHT);
+            Assert.IsFalse(BadRobot.IsPlaced());
         }
 
         [Test]
         public void IgnoreReportWhenUnplaced() {
-            String report = badRobot.ReportPosture();
+            String report = BadRobot.ReportPosture();
             Assert.AreEqual(String.Empty, report);
         }
     }

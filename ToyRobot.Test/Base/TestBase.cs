@@ -1,6 +1,4 @@
-﻿using NUnit.Framework;
-using ToyRobot.Core;
-#region Licence
+﻿#region Licence
 /*
  * The MIT License
  *
@@ -26,20 +24,23 @@ using ToyRobot.Core;
  */
 #endregion
 
+using NUnit.Framework;
+using ToyRobot.Core;
+
 namespace ToyRobot.Test.Base {
     
     public class TestBase {
         //Apologies to JJ Abrams.
-        protected Robot badRobot;
+        protected Robot BadRobot;
 
         [SetUp]
         public void Setup() {
-            badRobot = new Robot();
+            BadRobot = new Robot();
         }
 
         [TearDown]
         public void Cleanup() {
-            badRobot = null;
+            BadRobot = null;
         }
     }
 }

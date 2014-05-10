@@ -132,10 +132,9 @@ namespace ToyRobot.Test.PlacementTests {
         [TestCase(4, 4, Direction.SOUTH)]
         [TestCase(4, 4, Direction.WEST)]
         public void ValidPlacementTest(int x, int y, Direction direction) {
-            badRobot.Place(x, y, direction);
-            Assert.AreEqual(x, badRobot.CurrentPosture.Position.X);
-            Assert.AreEqual(y, badRobot.CurrentPosture.Position.Y);
-            Assert.AreEqual(direction, badRobot.CurrentPosture.Direction);
+            BadRobot.Place(x, y, direction);
+            Posture expectedPosture = new Posture(new Position(x, y), direction);
+            Assert.IsTrue(BadRobot.ZenLike(expectedPosture));
         }
 
         [Test]
@@ -156,8 +155,8 @@ namespace ToyRobot.Test.PlacementTests {
         [TestCase(0, 5, Direction.SOUTH)]
         [TestCase(0, 5, Direction.WEST)]
         public void InvalidPlacementTest(int x, int y, Direction direction) {
-            badRobot.Place(x, y, direction);
-            Assert.AreEqual(null, badRobot.CurrentPosture);
+            BadRobot.Place(x, y, direction);
+            Assert.IsFalse(BadRobot.IsPlaced());
         }
     }
 }
