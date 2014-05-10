@@ -26,6 +26,7 @@
 
 using System;
 using Table.Core;
+
 namespace ToyRobot.Core {
     public class Position {
         private int X;

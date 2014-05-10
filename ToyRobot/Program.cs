@@ -25,7 +25,6 @@
 #endregion
 
 using System;
-using Table.Core;
 using ToyRobot.Core;
 
 namespace ToyRobot {
@@ -87,6 +86,7 @@ namespace ToyRobot {
 
         private static void PrintHelp() {
             Console.WriteLine();
+            Console.WriteLine(Constants.AVAILABLE_COMMANDS);
             Console.WriteLine(Constants.PLACE_HELP);
             Console.WriteLine(Constants.MOVE_HELP);
             Console.WriteLine(Constants.LEFT_HELP);

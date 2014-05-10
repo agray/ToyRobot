@@ -24,8 +24,8 @@
  */
 #endregion
 
-using Table.Core;
 using System;
+using Table.Core;
 
 namespace ToyRobot.Core {
     public class Robot {

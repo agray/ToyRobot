@@ -25,7 +25,7 @@
 #endregion
 
 using System;
-using Table.Core;
+
 namespace ToyRobot.Core {
     public class Posture {
         private Position Position;
