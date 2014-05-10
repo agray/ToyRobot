@@ -25,7 +25,7 @@
     </branches>
     <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
     <browser class="hudson.plugins.git.browser.GithubWeb">
-      <url></url>
+      <url>http://github.com/agray/ToyRobot/</url>
     </browser>
     <submoduleCfg class="list"/>
     <extensions/>
