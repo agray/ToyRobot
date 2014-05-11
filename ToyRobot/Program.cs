@@ -140,6 +140,9 @@ namespace ToyRobot {
                 case Constants.REPORT:
                     Console.WriteLine(Robot.ReportPosture());
                     break;
+                case Constants.EXIT:
+                    Console.WriteLine(Constants.EXIT_MESSAGE);
+                    break;
             }
         }
     }

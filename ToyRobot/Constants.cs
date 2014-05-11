@@ -41,6 +41,7 @@ namespace ToyRobot {
         public const String REPORT_HELP = "REPORT: Report current position and direction faced.";
         public const String HELP_HELP = "HELP: Print this help.";
         public const String EXIT_HELP = "EXIT: Exit this application.";
+        public const String EXIT_MESSAGE = "Exiting TOY ROBOT...";
 
         //Commands
         public const String REPORT = "REPORT";
