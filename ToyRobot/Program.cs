@@ -138,7 +138,10 @@ namespace ToyRobot {
                     Robot.Turn(TurnTo.RIGHT);
                     break;
                 case Constants.REPORT:
-                    Console.WriteLine(Robot.ReportPosture());
+                    String status = Robot.ReportPosture();
+                    if(status != String.Empty) {
+                        Console.WriteLine(Robot.ReportPosture());
+                    }
                     break;
                 case Constants.EXIT:
                     Console.WriteLine(Constants.EXIT_MESSAGE);
