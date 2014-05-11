@@ -28,7 +28,6 @@ using NUnit.Framework;
 using ToyRobot.Core;
 
 namespace ToyRobot.Test.Base {
-    
     public class TestBase {
         //Apologies to JJ Abrams.
         protected Robot BadRobot;

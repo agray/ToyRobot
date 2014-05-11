@@ -28,6 +28,7 @@ using System;
 
 namespace ToyRobot {
     public class Constants {
+        //General Messages
         public const String TAG_LINE = "WELCOME TO TOY ROBOT!";
         public const String INITIAL_INSTRUCTION = "Execute UPPERCASE commands (type HELP for list of available commands).";
         public const String INVALID_INPUT = "Invalid command, try again...";
@@ -40,18 +41,20 @@ namespace ToyRobot {
         public const String HELP_HELP = "HELP: Print this help.";
         public const String EXIT_HELP = "EXIT: Exit this application.";
 
-        public const String NORTH = "N";
-        public const String SOUTH = "S";
-        public const String EAST = "E";
-        public const String WEST = "W";
-
+        //Commands
         public const String REPORT = "REPORT";
         public const String MOVE = "MOVE";
-        public const String EXIT = "EXIT";
         public const String HELP = "HELP";
         public const String LEFT = "LEFT";
         public const String RIGHT = "RIGHT";
         public const String PLACE = "PLACE";
+        public const String EXIT = "EXIT";
+
+        //Compass Directions
+        public const String NORTH = "NORTH";
+        public const String SOUTH = "SOUTH";
+        public const String EAST = "EAST";
+        public const String WEST = "WEST";
 
         public const char COMMA_CHAR = ',';
         public const char SPACE_CHAR = ' ';
