@@ -35,6 +35,7 @@ namespace ToyRobot {
         static void Main(string[] args) {
             PrintTitle();
             do {
+                Console.WriteLine(Constants.ENTER_COMMAND);
                 UserInput = Console.ReadLine();
                 if(IsValid(UserInput)) {
                     ProcessInput();

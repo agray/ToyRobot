@@ -31,6 +31,7 @@ namespace ToyRobot {
         //General Messages
         public const String TAG_LINE = "WELCOME TO TOY ROBOT!";
         public const String INITIAL_INSTRUCTION = "Execute UPPERCASE commands (type HELP for list of available commands).";
+        public const String ENTER_COMMAND = "Enter a command:";
         public const String INVALID_INPUT = "Invalid command, try again...";
         public const String AVAILABLE_COMMANDS = "AVAILABLE COMMANDS:";
         public const String PLACE_HELP = "PLACE X,Y,F: Place robot on table with position X,Y and direction F.";
