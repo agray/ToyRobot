@@ -34,11 +34,11 @@ namespace ToyRobot {
         public const String ENTER_COMMAND = "Enter a command:";
         public const String INVALID_INPUT = "Invalid command, try again...";
         public const String AVAILABLE_COMMANDS = "AVAILABLE COMMANDS:";
-        public const String PLACE_HELP = "PLACE X,Y,F: Place robot on table with position X,Y and direction F.";
-        public const String MOVE_HELP = "MOVE: Move the robot forward one grid place in direction currently facing.";
-        public const String RIGHT_HELP = "RIGHT: Turn robot 90 degrees right.";
-        public const String LEFT_HELP = "LEFT: Turn robot 90 degrees left.";
-        public const String REPORT_HELP = "REPORT: Report current position and direction faced.";
+        public const String PLACE_HELP = "PLACE X,Y,F: Place the robot on table with position X,Y and direction F. Allowable values for F are NORTH, SOUTH, EAST or WEST.";
+        public const String MOVE_HELP = "MOVE: Move the robot forward one place in the direction it is currently facing.";
+        public const String RIGHT_HELP = "RIGHT: Turn robot 90 degrees to its right.";
+        public const String LEFT_HELP = "LEFT: Turn robot 90 degrees to its left.";
+        public const String REPORT_HELP = "REPORT: Report the robot's current position and direction.";
         public const String HELP_HELP = "HELP: Print this help.";
         public const String EXIT_HELP = "EXIT: Exit this application.";
         public const String EXIT_MESSAGE = "Exiting TOY ROBOT...";
