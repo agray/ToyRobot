@@ -2,12 +2,12 @@
 <org.jvnet.hudson.plugins.thinbackup.backup.PluginList plugin="thinBackup@1.7.4">
   <plugins>
     <entry>
-      <string>filesystem_scm</string>
-      <string>1.20</string>
-    </entry>
-    <entry>
       <string>msbuild</string>
       <string>1.21</string>
+    </entry>
+    <entry>
+      <string>filesystem_scm</string>
+      <string>1.20</string>
     </entry>
     <entry>
       <string>ssh-credentials</string>
@@ -78,6 +78,10 @@
       <string>1.10</string>
     </entry>
     <entry>
+      <string>ansicolor</string>
+      <string>0.3.1</string>
+    </entry>
+    <entry>
       <string>greenballs</string>
       <string>1.14</string>
     </entry>
@@ -131,7 +135,7 @@
     </entry>
     <entry>
       <string>ldap</string>
-      <string>1.8</string>
+      <string>1.9</string>
     </entry>
     <entry>
       <string>matrix-project</string>

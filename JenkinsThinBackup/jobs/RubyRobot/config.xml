@@ -48,6 +48,16 @@
       <bundleExec>false</bundleExec>
     </hudson.plugins.rake.Rake>
   </builders>
-  <publishers/>
-  <buildWrappers/>
+  <publishers>
+    <hudson.tasks.ArtifactArchiver>
+      <artifacts>**\*.rb</artifacts>
+      <latestOnly>false</latestOnly>
+      <allowEmptyArchive>false</allowEmptyArchive>
+    </hudson.tasks.ArtifactArchiver>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.ansicolor.AnsiColorBuildWrapper plugin="ansicolor@0.3.1">
+      <colorMapName>xterm</colorMapName>
+    </hudson.plugins.ansicolor.AnsiColorBuildWrapper>
+  </buildWrappers>
 </project>
