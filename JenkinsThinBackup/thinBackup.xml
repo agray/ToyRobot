@@ -8,7 +8,7 @@
   <waitForIdle>true</waitForIdle>
   <forceQuietModeTimeout>120</forceQuietModeTimeout>
   <cleanupDiff>true</cleanupDiff>
-  <moveOldBackupsToZipFile>false</moveOldBackupsToZipFile>
+  <moveOldBackupsToZipFile>true</moveOldBackupsToZipFile>
   <backupBuildResults>false</backupBuildResults>
   <backupBuildArchive>false</backupBuildArchive>
   <backupUserContents>false</backupUserContents>

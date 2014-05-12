@@ -18,8 +18,16 @@
       <string>1.11</string>
     </entry>
     <entry>
+      <string>ruby</string>
+      <string>1.2</string>
+    </entry>
+    <entry>
       <string>scm-api</string>
       <string>0.2</string>
+    </entry>
+    <entry>
+      <string>rake</string>
+      <string>1.8.0</string>
     </entry>
     <entry>
       <string>javadoc</string>
@@ -32,6 +40,10 @@
     <entry>
       <string>mailer</string>
       <string>1.8</string>
+    </entry>
+    <entry>
+      <string>rubyMetrics</string>
+      <string>1.5.0</string>
     </entry>
     <entry>
       <string>maven-plugin</string>

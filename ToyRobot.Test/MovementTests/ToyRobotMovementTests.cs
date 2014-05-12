@@ -143,54 +143,30 @@ namespace ToyRobot.Test.MovementTests {
         }
 
         [Test]
-        [TestCase(0, 4)]
-        [TestCase(1, 4)]
-        [TestCase(2, 4)]
-        [TestCase(3, 4)]
-        [TestCase(4, 4)]
-        public void InvalidMoveNorthTest(int x, int y) {
-            BadRobot.Place(x, y, Direction.NORTH);
+        [TestCase(0, 4, Direction.NORTH)]
+        [TestCase(1, 4, Direction.NORTH)]
+        [TestCase(2, 4, Direction.NORTH)]
+        [TestCase(3, 4, Direction.NORTH)]
+        [TestCase(4, 4, Direction.NORTH)]
+        [TestCase(4, 0, Direction.EAST)]
+        [TestCase(4, 1, Direction.EAST)]
+        [TestCase(4, 2, Direction.EAST)]
+        [TestCase(4, 3, Direction.EAST)]
+        [TestCase(4, 4, Direction.EAST)]
+        [TestCase(0, 0, Direction.SOUTH)]
+        [TestCase(1, 0, Direction.SOUTH)]
+        [TestCase(2, 0, Direction.SOUTH)]
+        [TestCase(3, 0, Direction.SOUTH)]
+        [TestCase(4, 0, Direction.SOUTH)]
+        [TestCase(0, 0, Direction.WEST)]
+        [TestCase(0, 1, Direction.WEST)]
+        [TestCase(0, 2, Direction.WEST)]
+        [TestCase(0, 3, Direction.WEST)]
+        [TestCase(0, 4, Direction.WEST)]
+        public void InvalidMoveTest(int x, int y, Direction direction) {
+            BadRobot.Place(x, y, direction);
             BadRobot.Move();
-            Posture expectedPosture = new Posture(new Position(x, y), Direction.NORTH);
-            Assert.IsTrue(BadRobot.ZenLike(expectedPosture));
-        }
-
-        [Test]
-        [TestCase(4, 0)]
-        [TestCase(4, 1)]
-        [TestCase(4, 2)]
-        [TestCase(4, 3)]
-        [TestCase(4, 4)]
-        public void InvalidMoveEastTest(int x, int y) {
-            BadRobot.Place(x, y, Direction.EAST);
-            BadRobot.Move();
-            Posture expectedPosture = new Posture(new Position(x, y), Direction.EAST);
-            Assert.IsTrue(BadRobot.ZenLike(expectedPosture));
-        }
-
-        [Test]
-        [TestCase(0, 0)]
-        [TestCase(1, 0)]
-        [TestCase(2, 0)]
-        [TestCase(3, 0)]
-        [TestCase(4, 0)]
-        public void InvalidMoveSouthTest(int x, int y) {
-            BadRobot.Place(x, y, Direction.SOUTH);
-            BadRobot.Move();
-            Posture expectedPosture = new Posture(new Position(x, y), Direction.SOUTH);
-            Assert.IsTrue(BadRobot.ZenLike(expectedPosture));
-        }
-
-        [Test]
-        [TestCase(0, 0)]
-        [TestCase(0, 1)]
-        [TestCase(0, 2)]
-        [TestCase(0, 3)]
-        [TestCase(0, 4)]
-        public void InvalidMoveWestTest(int x, int y) {
-            BadRobot.Place(x, y, Direction.WEST);
-            BadRobot.Move();
-            Posture expectedPosture = new Posture(new Position(x, y), Direction.WEST);
+            Posture expectedPosture = new Posture(new Position(x, y), direction);
             Assert.IsTrue(BadRobot.ZenLike(expectedPosture));
         }
     }
