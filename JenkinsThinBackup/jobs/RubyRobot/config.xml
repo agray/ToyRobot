@@ -43,14 +43,14 @@
       <rakeFile>./Rakefile</rakeFile>
       <rakeLibDir></rakeLibDir>
       <rakeWorkingDir></rakeWorkingDir>
-      <tasks>test</tasks>
+      <tasks>test package</tasks>
       <silent>false</silent>
       <bundleExec>false</bundleExec>
     </hudson.plugins.rake.Rake>
   </builders>
   <publishers>
     <hudson.tasks.ArtifactArchiver>
-      <artifacts>**\*.rb</artifacts>
+      <artifacts>pkg\**\*.zip</artifacts>
       <latestOnly>false</latestOnly>
       <allowEmptyArchive>false</allowEmptyArchive>
     </hudson.tasks.ArtifactArchiver>
